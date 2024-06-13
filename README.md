@@ -9,7 +9,7 @@ If you want a little documentation on it, feel free to read it. It is located in
 
 Clone this repository onto your own disk:
 ```
-git clone https://github.com/Elwag/Computerlexikon
+  git clone https://github.com/Elwag/Computerlexikon
 ```
 Then open index.html in your browser.
 ## Run Locally
@@ -17,7 +17,7 @@ Then open index.html in your browser.
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Elwag/Computerlexikon
 ```
 
 Go to the project directory and copy the files into your webserver's data directory
