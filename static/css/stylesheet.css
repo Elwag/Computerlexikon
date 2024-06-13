@@ -1,0 +1,336 @@
+body {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0.2497373949579832) 100%);
+    background-size: cover;
+    font-size: 4.7mm;
+    font-family: "Lucida Console", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    backdrop-filter: invert(100%);
+    /*background-color: lightgray;*/
+    font-size: 4.7mm;
+    color: white;
+}
+
+.h1 {
+    font-weight: bold;
+    color: orange;
+    font-size: 3.5vw;
+    animation: color-change 2s 0s 1;
+}
+
+summary {
+    font-weight: bold;
+    color: orange;
+    animation: summary-slidein 3s 0s 1;
+}
+
+summary:hover {
+    color: gray;
+}
+
+summary:active {
+    color: orangered;
+}
+
+p {
+    color: orangered;
+    font-size: 5.5mm;
+}
+
+a {
+    color: orangered;
+    font-size: 5.5mm;
+}
+
+li {
+    display: inline;
+    padding: 15px;
+}
+
+li li li {
+    color: orangered;
+    font-size: 5.5mm;
+}
+
+img {
+    width: 192px;
+    height: 108px;
+}
+
+.img2 {
+    /*width: 768px;
+    height: 432px;*/
+    border-radius: 10px 25px;
+    object-fit: cover;
+    transition: 0.1s ease;
+    transition-duration: 0.5s;
+}
+
+.img2:hover {
+    /*animation: picture-hover 0.5s 0.3s forwards;*/
+    transform: scale(4);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3mm;
+
+}
+
+.source {
+    display: none;
+}
+
+.img:hover+.source {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background-color: #dedede;
+    text-align: center;
+    animation: footerslidein 2s 0s 1 ease-in-out forwards;
+}
+.navbar {
+    background: radial-gradient(circle, #cccccc, #777777);
+    transition: background 0.1s;
+    animation: navbarslidein 2s ease-in-out forwards;
+}
+
+.navbar img {
+    scale: 0%;
+    padding: 0px;
+    animation: navbarpicture 1.5s ease-in-out 1.2s 1 forwards;
+}
+
+.navbar img:hover {
+    scale: 0%;
+    padding: 0px;
+    opacity: 0.6;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: -16%;
+    animation: element1 1.5s ease-in-out 1.5s 1 forwards;
+}
+
+nav {
+    float: right;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 15px;
+    animation: navbar-color-change 1s forwards;
+}
+
+nav a:hover {
+    animation: navbar-color-change-hover 0.2s forwards;
+}
+
+nav a:active {
+    font-weight: bold;
+}
+
+.leftbound {
+    margin-top: -1.5%;
+    margin-left: -2%;
+    width: 192px;
+    height: 108px;
+    border-radius: 15px 50px;
+}
+
+.sticker {
+    animation: sticker 2s infinite;
+}
+
+.test {
+    object-fit: cover;
+    transition: 0.1s ease;
+    transition-duration: 0.5s;
+}
+
+.test:hover {
+    transform: scale(4)
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.cookie-banner p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+#accept-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#accept-button:hover {
+    background-color: #555;
+}
+
+@keyframes navbar-color-change-hover {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: orange;
+    }
+}
+
+@keyframes navbar-color-change {
+    0% {
+        color: orange;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: white;
+        margin-left: 10%;
+    }
+
+    100% {
+        color: orange;
+        margin-left: 0%;
+    }
+}
+
+@keyframes summary-slidein {
+    0% {
+        margin-left: 20%;
+        color: rgba(0, 0, 0, 0)
+    }
+
+    100% {
+        margin-left: 0%;
+        color: orange;
+    }
+}
+
+@keyframes divstart {
+    0% {
+        margin-left: 20%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+@keyframes navbarslidein {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 50px;
+    }
+}
+
+@keyframes navbarpicture {
+    0% {
+        scale: 0%;
+    }
+
+    100% {
+        scale: 40%;
+    }
+}
+
+@keyframes element1 {
+    0% {
+        margin: -16%;
+    }
+
+    100% {
+        margin: 0%;
+    }
+}
+
+@keyframes picture-hover {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.5);
+    }
+}
+
+@keyframes picture {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes summary-standout-hover {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: #ff8800;
+    }
+}
+
+@keyframes footerslidein {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 50px;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

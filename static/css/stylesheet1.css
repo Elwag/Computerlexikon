@@ -1,0 +1,348 @@
+body {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0.2497373949579832) 100%);
+    background-size: cover;
+    font-size: 4.7mm;
+    font-family: "Lucida Console", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    /*backdrop-filter: invert(100%);
+    background-color: lightgray;*/
+    font-size: 4.7mm;
+    color: white;
+}
+
+.h1 {
+    font-weight: bold;
+    color: orange;
+    font-size: 3.5vw;
+    animation: color-change 2s 0s 1;
+}
+
+.h1:hover {
+    font-weight: bold;
+    font-size: 3.5vw;
+    color: #ffc772;
+}
+
+summary {
+    font-weight: bold;
+    color:orange;
+    animation: summary-slidein 3s 0s 1;
+}
+
+summary:hover {
+    font-weight: bold;
+    color: gray;
+}
+
+summary:active {
+    color: orangered;
+}
+
+p {
+    color: orangered;
+    font-size: 5.5mm;
+}
+
+a {
+    color: orangered;
+    font-size: 5.5mm;
+}
+
+li {
+    display: inline;
+    padding: 15px;
+}
+
+li li li {
+    color: orangered;
+    font-size: 5.5mm;
+}
+
+.img2 {
+    width: 192px;
+    height: 108px;
+}
+
+.img2:hover {
+    animation: picture-hover 0.5s forwards;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3mm;
+
+}
+
+.source {
+    display: none;
+}
+
+.img:hover+.source {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background-color: #dedede;
+    text-align: center;
+    animation: footerslidein 2s 0s 1 ease-in-out forwards;
+}
+
+.footer:hover {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background-color: #dededee3;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #dedede;
+    animation: navbarslidein 2s ease-in-out forwards;
+}
+
+.navbar img {
+    scale: 0%;
+    padding: 0px;
+    animation: navbarpicture 1.5s ease-in-out 1.2s 1 forwards;
+}
+
+.navbar img:hover {
+    scale: 0%;
+    padding: 0px;
+    opacity: 0.6;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: -16%;
+    animation: element1 1.5s ease-in-out 1.5s 1 forwards;
+}
+
+nav {
+    float: right;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 15px;
+    animation: navbar-color-change 1s forwards;
+}
+
+nav a:hover {
+    animation: navbar-color-change-hover 0.2s forwards;
+}
+
+nav a:active {
+    font-weight: bold;
+}
+
+.leftbound {
+    margin-top: -1.5%;
+    margin-left: -2%;
+    width: 192px;
+    height: 108px;
+    border-radius: 15px 50px;
+}
+
+.leftbound:hover {
+    margin-top: -1.5%;
+    margin-left: -2%;
+
+}
+
+.sticker {
+    animation: rotation ease-in-out 15s infinite;
+}
+
+.stickerdiv {
+    animation: rotationdiv ease-in-out 6s infinite;
+}
+
+.stickerdivback {
+    animation: rotationdiv ease-in-out 6s infinite backwards;
+}
+
+.car {
+    background-image: url("car.jpg");
+    height:928px;
+    width:986px;
+    scale:70%;
+    animation: driving 15s ease-in-out infinite;
+}
+
+@keyframes navbar-color-change-hover {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: orange;
+    }
+}
+
+@keyframes navbar-color-change {
+    0% {
+        color: orange;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: white;
+        margin-left: 10%;
+    }
+
+    100% {
+        color: orange;
+        margin-left: 0%;
+    }
+}
+
+@keyframes summary-slidein {
+    0% {
+        margin-left: 20%;
+        color: rgba(0, 0, 0, 0)
+    }
+
+    100% {
+        margin-left: 0%;
+        color: orange;
+    }
+}
+
+@keyframes divstart {
+    0% {
+        margin-left: 20%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+@keyframes navbarslidein {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 50px;
+    }
+}
+
+@keyframes navbarpicture {
+    0% {
+        scale: 0%;
+    }
+
+    100% {
+        scale: 40%;
+    }
+}
+
+@keyframes element1 {
+    0% {
+        margin: -16%;
+    }
+
+    100% {
+        margin: 0%;
+    }
+}
+
+@keyframes picture-hover {
+    0% {
+        width: 192px;
+        height: 108px;
+    }
+
+    100% {
+        width: 768px;
+        height: 432px;
+    }
+}
+
+@keyframes summary-standout-hover {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: #ff8800;
+    }
+}
+
+@keyframes footerslidein {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 50px;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-1440deg);
+    }
+}
+
+@keyframes rotationdiv {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes driving {
+    0% {
+        transform: rotate(0deg);
+    }
+    8% {
+        transform: rotate(8deg);
+    }
+    15% {
+        transform: rotate(-20deg);
+    }
+    30% {
+        transform: rotate(-5deg);
+    }
+    40% {
+        transform: rotate(-18deg);
+    }
+    60% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(60deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
