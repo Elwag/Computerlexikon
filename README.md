@@ -5,9 +5,6 @@ This is my website written in HTML, CSS and JavaScript.
 It is a school project that I made in ~2 weeks.
 
 If you want a little documentation on it, feel free to read it. It is located in the documentation directory. Just be aware that it is in German, so if you can't read that, get your translator ready!
-## Demo
-
-https://sörva.de (only available for a short period of time, then never again)
 ## Installation
 
 Clone this repository onto your own disk:
